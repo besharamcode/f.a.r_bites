@@ -1,46 +1,28 @@
 import React from "react";
-
-import logo from "../assets/Logo.svg";
+import Logo from "../components/Logo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 w-full flex md:bg-red-500 sm:justify-between flex-wrap items-center px-12 py-4">
-      <div className="logo">
-        <img
-          src={logo}
-          className="w-[4rem] object-cover"
-          alt="F.A.R Bites"
-        />
-      </div>
-      <nav>
-        <ul className="flex items-center gap-6 font-[Satoshi-medium] font-md text-lg text-[#79321b]">
-          <li>
-            <a href="#home" className="p-1 w-full nav-anim relative">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#menu" className="p-1 w-full nav-anim relative">
-              Menu
-            </a>
-          </li>
-          <li>
-            <a href="#ratings" className="p-1 w-full nav-anim relative">
-              Ratings
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="p-1 w-full nav-anim relative">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="p-1 w-full nav-anim relative">
-              Contact Us
-            </a>
-          </li>
+    <div className="fixed top-0 w-full flex justify-between items-center px-12 py-4">
+      <Logo />
+      <nav className="hidden md:block">
+        <ul className="flex items-center justify-evenly gap-6 font-[Satoshi-medium] font-md text-lg text-prm">
+          {["Home", "Menu", "Ratings", "About Us", "Contact Us"].map((item) => {
+            return (
+              <li key={item}>
+                <a href={`#${item}`} className="p-1 w-full nav-anim relative">
+                  {item}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
+      <button className="md:hidden">
+        <FontAwesomeIcon className="text-prm text-2xl" icon={faBars} />
+      </button>
     </div>
   );
 };
