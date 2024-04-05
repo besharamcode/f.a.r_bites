@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 w-full flex sm:justify-between items-center px-12 py-4">
       <div className="logo">
-        <img src={logo} alt="F.A.R Bites" width={100} />
+        <img src={logo} className="w-full object-cover" alt="F.A.R Bites" width={100} />
       </div>
       <nav>
         <ul className="flex items-center gap-6 font-[Satoshi-medium] font-md text-lg text-[#79321b]">
