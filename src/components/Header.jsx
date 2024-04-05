@@ -4,13 +4,12 @@ import logo from "../assets/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 w-full flex sm:justify-between flex-wrap items-center px-12 py-4">
+    <div className="fixed top-0 w-full flex md:bg-red-500 sm:justify-between flex-wrap items-center px-12 py-4">
       <div className="logo">
         <img
           src={logo}
           className="w-[4rem] object-cover"
           alt="F.A.R Bites"
-          width={100}
         />
       </div>
       <nav>
