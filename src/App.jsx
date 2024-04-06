@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="bg-orange-100 h-full w-full">
+    <div className="bg-bg min-h-screen w-full">
       <Header />
       <Hero />
     </div>

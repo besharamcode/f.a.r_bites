@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --prm-clr: #79321b;
+  --bg-clr: #ffedd5;
+}
+
 html,
 body,
 #root {
@@ -15,7 +20,7 @@ body,
   content: "";
   height: 0.1rem;
   width: 0%;
-  background-color: #79321b;
+  background-color: var(--prm-clr);
   display: inline-block;
   position: absolute;
   top: 1.7rem;
@@ -25,4 +30,14 @@ body,
 
 .nav-anim:hover::after {
   width: 100%;
+}
+
+.body-padding {
+  padding-inline: 3rem;
+}
+
+@media (max-width: 768px) {
+  .body-padding {
+    padding-inline: 1rem;
+  }
 }

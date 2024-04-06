@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        prm: "#621f09",
+        prm: "var(--prm-clr)",
+        bg: "var(--bg-clr)",
       },
     },
   },
