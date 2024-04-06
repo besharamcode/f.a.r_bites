@@ -19,7 +19,7 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <img src={logo} alt="" />
+          <img className="opacity-0" src={logo} alt="" />
         </div>
       </section>
     </div>
