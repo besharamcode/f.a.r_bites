@@ -4,7 +4,7 @@ import logo from "../assets/Logo.svg";
 const Hero = () => {
   return (
     <div id="home" className="h-[100vh] body-padding pt-1">
-      <section className="flex justify-between flex-col-reverse md:flex-row h-full md:mt-44 mt-40">
+      <section className="flex justify-between flex-col md:flex-row h-full md:mt-44 mt-40">
         <div className="w-full md:w-2/3">
           <h1 className="text-6xl md:text-[6vw] font-bold text-prm font-[Outfit-Bold] ">
             Indulge Your Cravings, Irresistible Brownies Await!
