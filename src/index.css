@@ -7,6 +7,7 @@
 :root {
   --prm-clr: #79321b;
   --bg-clr: #ffedd5;
+  --prm-muted: #8a4b36;
 }
 
 html,
@@ -14,6 +15,7 @@ body,
 #root {
   height: 100%;
   width: 100%;
+  background: var(--bg-clr);
 }
 
 .nav-anim::after {

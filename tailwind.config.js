@@ -6,6 +6,7 @@ export default {
       colors: {
         prm: "var(--prm-clr)",
         bg: "var(--bg-clr)",
+        "prm-muted": "var(--prm-muted)",
       },
     },
   },

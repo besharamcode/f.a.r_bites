@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/Logo-100.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState(window.location.hash);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActiveLink(window.location.hash);
+    };
+    window.addEventListener("hashchange", handleHashChange);
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-0 flex w-full justify-between items-center body-padding py-4">
+    <div className="fixed top-0 flex w-full justify-between items-center body-padding py-4 bg-bg shadow-md">
       <div className="logo">
-        <img className="sm:h-16 h-14" src={logo} alt="FAR Bites" />
+        <img className="md:h-16 h-[3.7rem]" src={logo} alt="FAR Bites" />
       </div>
       <nav
         id="navbar"
@@ -15,20 +27,26 @@ const Header = () => {
       >
         <div className="relative">
           <ul className="md:flex md:items-center md:justify-evenly md:gap-6 font-[Outfit-Medium] font-md text-md text-prm">
-            {["Home", "Menu", "Ratings", "About Us", "Contact Us"].map(
-              (item) => {
-                return (
-                  <li key={item} className="text-center md:text-start">
-                    <a
-                      href={`#${item}`}
-                      className="p-1  nav-anim relative block mt-4"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                );
-              }
-            )}
+            {[
+              { title: "Home", url: "#home" },
+              { title: "Menu", url: "#menu" },
+              { title: "Ratings", url: "#ratings" },
+              { title: "About Us", url: "#about" },
+              { title: "Contact Us", url: "#contact" },
+            ].map((link) => {
+              return (
+                <li key={link.url} className="text-center md:text-start">
+                  <a
+                    href={`${link.url}`}
+                    className={`p-1 nav-anim relative block mt-4 ${
+                      activeLink === link.url ? "after:w-full" : ""
+                    }`}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <button
             className="md:hidden"
