@@ -1,12 +1,16 @@
 import React from "react";
 import Logo from "../components/Logo";
+import logo from "../assets/Logo-100.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <div className="fixed top-0 w-full flex justify-between items-center px-12 py-4">
-      <Logo />
+      {/* <Logo /> */}
+      <div className="logo">
+        <img src={logo} alt="FAR Bites" />
+      </div>
       <nav className="hidden md:block">
         <ul className="flex items-center justify-evenly gap-6 font-[Satoshi-medium] font-md text-lg text-prm">
           {["Home", "Menu", "Ratings", "About Us", "Contact Us"].map((item) => {
