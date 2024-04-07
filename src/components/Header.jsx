@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 flex w-full justify-between items-center body-padding py-4 bg-bg shadow-md">
+    <div className="fixed top-0 flex w-full justify-between items-center body-padding py-4 bg-bg shadow-md hide-scrollbar z-50">
       <div className="logo">
         <img className="md:h-16 h-[3.7rem]" src={logo} alt="FAR Bites" />
       </div>
@@ -26,7 +26,7 @@ const Header = () => {
         className="absolute transition-all -top-[50rem] md:top-[unset] md:static bg-bg md:bg-transparent w-[98%] rounded-md left-1/2 md:translate-x-0 -translate-x-1/2 md:w-fit shadow-md md:shadow-none "
       >
         <div className="relative">
-          <ul className="md:flex md:items-center md:justify-evenly md:gap-6 font-[Outfit-Medium] font-md text-md text-prm">
+          <ul className="md:flex md:items-center md:justify-evenly md:gap-6 font-[Outfit-Medium] font-md text-md">
             {[
               { title: "Home", url: "#home" },
               { title: "Menu", url: "#menu" },

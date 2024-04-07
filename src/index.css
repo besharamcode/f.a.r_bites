@@ -16,7 +16,25 @@ body,
   height: 100%;
   width: 100%;
   background: var(--bg-clr);
+  scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
 
 .nav-anim::after {
   content: "";

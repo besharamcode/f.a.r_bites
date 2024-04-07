@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div className="w-full hide-scrollbar">
       <Header />
       <Hero />
       <Menu />
