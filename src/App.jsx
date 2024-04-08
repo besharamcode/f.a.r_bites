@@ -1,21 +1,16 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Menu from "./components/Menu";
-import Ratings from "./components/Ratings";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SingleMenu from "./pages/SingleMenu";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="w-full hide-scrollbar">
-      <Header />
-      <Hero />
-      <Menu />
-      <Ratings />
-      <About />
-      <Contact />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<SingleMenu />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
