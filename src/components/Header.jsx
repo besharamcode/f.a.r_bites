@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 flex w-full justify-between items-center body-padding py-4 bg-bg shadow-md hide-scrollbar z-50">
       <div className="logo">
-        <img className="md:h-16 h-[3.7rem]" src={logo} alt="FAR Bites" />
+        <img className="md:h-16 h-[3.7rem]" src={logo} alt="F.A.R Bites" />
       </div>
       <nav
         id="navbar"

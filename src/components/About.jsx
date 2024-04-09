@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <div className="w-fit">
             <h3 className="text-[1.5rem] mt-7 md:text-[2.5rem] font-[Outfit-Medium]">
-              Assalamualaikum, We are Far Bites
+              Assalamualaikum, We are F.A.R Bites
             </h3>
             <p className="tracking-wide font-[Outfit-Light]">
               Enter a realm of temptation with our irresistible brownies.
