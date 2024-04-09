@@ -56,6 +56,12 @@ body,
   padding-inline: 3rem;
 }
 
+.arrow {
+  clip-path: polygon(56% 0, 0 0, 68% 95%);
+  width: 1rem;
+  height: 1rem;
+}
+
 @media (max-width: 768px) {
   .body-padding {
     padding-inline: 1rem;

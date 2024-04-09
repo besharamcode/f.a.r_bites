@@ -72,18 +72,18 @@ const Menu = () => {
   console.log(cardsContainer);
   return (
     <div id="menu" className="min-h-[100vh] body-padding pt-1 hide-scrollbar">
-      <section className="h-full md:mt-10 mt-20 ">
+      <section className="h-full md:mt-24 mt-20 ">
         <h2 className="font-[Outfit-Semibold] text-center text-2xl font-bold text-prm border-b-2 border-b-prm">
           Menu
         </h2>
         <div
-          id="cards"
-          className="cards flex justify-center flex-wrap sm:gap-16 gap-8 md:mt-20 mt-16 font-[Outfit-Medium]"
+          id="menu-cards"
+          className="menu-cards flex justify-center flex-wrap sm:gap-16 gap-8 md:mt-20 mt-16 font-[Outfit-Medium]"
         >
           {menus.map((menu) => {
             return (
               <div
-                className="card sm:w-[20rem] w-full border-2 border-prm rounded-2xl overflow-hidden relative flex flex-col"
+                className="card w-[20rem]  border-2 border-prm rounded-2xl overflow-hidden relative flex flex-col"
                 key={menu.id}
               >
                 <div className="card-img">
