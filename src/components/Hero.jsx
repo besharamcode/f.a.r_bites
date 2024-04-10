@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className="text-[8vw] leading-[9vw] md:text-[6vw] md:leading-[6.5vw] font-bold font-[Outfit-Bold]">
             Indulge Your Cravings, Irresistible Brownies Await!
           </h1>
-          <p className="sm:w-3/4 w-full mt-2">
+          <p className="sm:w-3/4 w-full mt-2 font-[Outfit-Light]">
             Enter a realm of temptation with our irresistible brownies. Satisfy
             your cravings with each decadent bite. Indulge now and experience
             pure delight!

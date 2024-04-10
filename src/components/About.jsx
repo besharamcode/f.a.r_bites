@@ -8,7 +8,7 @@ const About = () => {
         <h2 className="font-[Outfit-Semibold] text-center text-2xl font-bold text-prm border-b-2 border-b-prm">
           About Us
         </h2>
-        <div className="flex justify-evenly items-center flex-col md:flex-row h-full mt-20">
+        <div className="flex justify-evenly items-center flex-col md:flex-row h-full mt-28">
           <div>
             <img
               className="w-[60%] mx-auto mix-blend-multiply bg-prm rounded-full p-2 overflow-hidden"
@@ -17,7 +17,7 @@ const About = () => {
             />
           </div>
           <div className="w-fit">
-            <h3 className="text-[1.5rem] mt-7 md:text-[2.5rem] font-[Outfit-Medium]">
+            <h3 className="text-[1.5rem] sm:text-[2rem] mt-7 font-[Outfit-Medium]">
               Assalamualaikum, We are F.A.R Bites
             </h3>
             <p className="tracking-wide font-[Outfit-Light]">

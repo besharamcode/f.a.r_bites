@@ -62,6 +62,25 @@ body,
   height: 1rem;
 }
 
+.change::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #906e62;
+}
+.change:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #906e62;
+  opacity: 1;
+}
+.change::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #906e62;
+  opacity: 1;
+}
+.change:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #906e62;
+}
+
 @media (max-width: 768px) {
   .body-padding {
     padding-inline: 1rem;
