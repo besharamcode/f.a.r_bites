@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -29,12 +29,12 @@ const Contact = () => {
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=9265598428"
+                href="https://www.linkedin.com/in/fazilath-ar-368851293/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xl sm:text-2xl bg-prm text-white grid place-items-center sm:size-12 size-10 rounded-full hover:bg-transparent hover:border-prm hover:border-2 hover:text-prm"
               >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 href="mailto:fazilathar856@gmail.com"

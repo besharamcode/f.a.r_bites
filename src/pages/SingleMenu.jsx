@@ -80,20 +80,20 @@ const SingleMenu = () => {
                   <div className="flex items-center gap-6 border-prm border-2 rounded-full">
                     <button
                       onClick={() => {
-                        setQuantity(quantity + 1);
-                      }}
-                      className="font-bold text-lg bg-prm text-white size-8 grid place-items-center rounded-full"
-                    >
-                      <FontAwesomeIcon icon={faPlus} />
-                    </button>
-                    <p className="text-lg font-[Outfit-Medium]">{quantity}</p>
-                    <button
-                      onClick={() => {
                         setQuantity(quantity < 2 ? 1 : quantity - 1);
                       }}
                       className="font-bold text-lg bg-prm text-white size-8 grid place-items-center rounded-full"
                     >
                       <FontAwesomeIcon icon={faMinus} />
+                    </button>
+                    <p className="text-lg font-[Outfit-Medium]">{quantity}</p>
+                    <button
+                      onClick={() => {
+                        setQuantity(quantity + 1);
+                      }}
+                      className="font-bold text-lg bg-prm text-white size-8 grid place-items-center rounded-full"
+                    >
+                      <FontAwesomeIcon icon={faPlus} />
                     </button>
                   </div>
                   <p className="text-lg font-[Outfit-Medium]">

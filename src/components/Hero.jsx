@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div>
           <img
-            className="md:w-[25rem] w-[75%] mx-auto md:mx-[unset] mb-12 opacity-50 rotate-12 hover:rotate-0 hover:opacity-100 transition-all rounded-md"
+            className="md:w-[25rem] w-[75%] mx-auto md:mx-[unset] mb-12 rounded-md"
             src={heroImg}
             alt=""
           />

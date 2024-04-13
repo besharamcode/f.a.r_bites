@@ -54,11 +54,13 @@ const Ratings = () => {
             >
               <div className="relative">
                 <div className="name bg-prm text-white px-4 py-1 h-fit mb-4">
-                  {rating.name}
+                  <p>{rating.name}</p>
                 </div>
                 <div className="arrow bg-prm absolute top-[2rem] right-0"></div>
               </div>
-              <div className="comment">{rating.comment}</div>
+              <div className="comment">
+                <p>{rating.comment}</p>
+              </div>
             </div>
           ))}
         </div>
